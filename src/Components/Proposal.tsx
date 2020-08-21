@@ -41,23 +41,31 @@ const Proposal: React.FC<{proposal: any}> = ({proposal}) => {
       </div>
       <div className="container right">
         {parseInt(proposal.votesFor)>0 && <div 
-          className="bar" 
+          className="bar"
+          id="green" 
           style={{
             backgroundColor: 'green', 
-            width: `${Math.round(100 * parseInt(proposal.votesFor) / totalVotes)}%`}} 
+            width: `${Math.round(100 * parseInt(proposal.votesFor) / totalVotes)}%`,
+            borderRadius: parseInt(proposal.votesAgainst)===0?"5px":""
+          }} 
         />}
         {parseInt(proposal.votesAgainst)>0 && <div 
-          className="bar" 
+          className="bar"
+          id="red" 
           style={{
             backgroundColor: 'red', 
-            width: `${Math.round(100 * parseInt(proposal.votesAgainst) / totalVotes)}%`}} 
+            width: `${Math.round(100 * parseInt(proposal.votesAgainst) / totalVotes)}%`,
+            borderRadius: parseInt(proposal.votesFor)===0?"5px":""
+          }} 
         />}
         {
           parseInt(proposal.votesAgainst)===0 && parseInt(proposal.votesFor)===0 &&<div 
           className="bar" 
           style={{
             backgroundColor: 'grey', 
-            width: `100%`}} 
+            width: `100%`,
+            borderRadius: "5px"
+          }} 
         />
         }
         <br/><br/>

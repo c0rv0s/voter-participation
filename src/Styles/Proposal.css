@@ -1,3 +1,14 @@
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0%;
+    transform: translateX(-8%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
 .proposal {
   display: inline-block;
   width: 100%;
@@ -58,6 +69,7 @@
   border-radius: 16px;
   box-shadow:  16px 16px 40px #d9d9d9, 
              -16px -16px 40px #ffffff;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .text-button {
@@ -115,12 +127,12 @@
   margin-top: 12px;
 }
 
-.bar:first-of-type {
+#green {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.bar:last-of-type {
+#red {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
