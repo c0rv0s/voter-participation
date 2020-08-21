@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/voter-participation/static/css/main.a0e2643c.chunk.css",
+    "main.js": "/voter-participation/static/js/main.aead8b11.chunk.js",
+    "main.js.map": "/voter-participation/static/js/main.aead8b11.chunk.js.map",
+    "runtime-main.js": "/voter-participation/static/js/runtime-main.240f4ac2.js",
+    "runtime-main.js.map": "/voter-participation/static/js/runtime-main.240f4ac2.js.map",
+    "static/js/2.872dbbd4.chunk.js": "/voter-participation/static/js/2.872dbbd4.chunk.js",
+    "static/js/2.872dbbd4.chunk.js.map": "/voter-participation/static/js/2.872dbbd4.chunk.js.map",
+    "index.html": "/voter-participation/index.html",
+    "precache-manifest.2b1de0753fcdb5443c7f24ee5a9314ca.js": "/voter-participation/precache-manifest.2b1de0753fcdb5443c7f24ee5a9314ca.js",
+    "service-worker.js": "/voter-participation/service-worker.js",
+    "static/css/main.a0e2643c.chunk.css.map": "/voter-participation/static/css/main.a0e2643c.chunk.css.map",
+    "static/js/2.872dbbd4.chunk.js.LICENSE.txt": "/voter-participation/static/js/2.872dbbd4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.240f4ac2.js",
+    "static/js/2.872dbbd4.chunk.js",
+    "static/css/main.a0e2643c.chunk.css",
+    "static/js/main.aead8b11.chunk.js"
+  ]
+}
