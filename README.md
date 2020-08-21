@@ -1,3 +1,9 @@
+## Voter Participation visualizer for DAOStack DAOs
+
+[Live Demo](https://c0rv0s.github.io/voter-participation/)
+
+View a timeline of proposals for a selection of DAOs and easily see voter turn out and number of votes cast.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
