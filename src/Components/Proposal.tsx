@@ -20,7 +20,7 @@ const Proposal: React.FC<{proposal: any}> = ({proposal}) => {
 
   return (
     <span className="proposal">
-      <div className="container circle left" onClick={() => setViewDetail(!viewDetail)}>
+      <div className="container circle left" >
         <div className="content" >
           <h4>
             {proposal.title}:
@@ -34,6 +34,9 @@ const Proposal: React.FC<{proposal: any}> = ({proposal}) => {
           {
             viewDetail && <Detail proposal={proposal}/>
           }
+          <p style={{color: "grey", cursor: "pointer"}} onClick={() => setViewDetail(!viewDetail)}>
+            {viewDetail?"Close": "Expand"}
+          </p>
         </div>
       </div>
       <div className="container right">

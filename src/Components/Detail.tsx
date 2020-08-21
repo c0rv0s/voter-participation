@@ -1,15 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Detail: React.FC<{proposal: any}> = ({proposal}) => {
-  console.log(proposal.votes)
+
   return (
     <div>
       <hr/>
+      Proposer:
+      <br/>
+      <p>{proposal.proposer}</p>
+      <br/><br/>
       Number of Voters: {proposal.votes.length}
       {
         proposal.votes.map((voter: any, i: number) => 
           <div key={i}>
-            {voter.voter}
+            <p >{voter.voter}</p>
           </div>
         )
       }
