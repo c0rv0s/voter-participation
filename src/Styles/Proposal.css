@@ -1,0 +1,137 @@
+.proposal {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Container around content */
+.container {
+  padding: 20px 60px;
+  position: relative;
+  display: inline-block;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.circle::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: -12px;
+  background-color: rgb(255, 255, 255);
+  border: 4px solid #6b42ff;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgb(255, 255, 255);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(153, 153, 153);
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  transition: all 0.2s ease;
+  padding: 20px 20px;
+  background-color: white;
+  position: relative;
+  border-radius: 16px;
+  box-shadow:  16px 16px 40px #d9d9d9, 
+             -16px -16px 40px #ffffff;
+}
+
+.content:hover {
+  box-shadow:  24px 24px 40px #d9d9d9, 
+  -24px -24px 40px #ffffff;
+  transform: translateY(-4px);
+} 
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+.bar {
+	float: left;
+  height: 10px;
+  margin-top: 12px;
+}
+
+.bar:first-of-type {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.bar:last-of-type {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.legends {
+  text-align: center;
+}
+
+.legends .legend {
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.legends .legend  {
+	font-size: 25px;
+	vertical-align: middle;
+}
+
+.legends .legend .label {
+  margin-left: 2px;
+	vertical-align: middle;
+}
