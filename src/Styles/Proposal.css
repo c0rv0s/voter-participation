@@ -9,6 +9,17 @@
   }
 }
 
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0%;
+    transform: translateX(8%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
 .proposal {
   display: inline-block;
   width: 100%;
@@ -70,6 +81,10 @@
   box-shadow:  16px 16px 40px #d9d9d9, 
              -16px -16px 40px #ffffff;
   animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.vote-container {
+  animation: 1s ease-out 0s 1 slideInFromRight;
 }
 
 .text-button {

@@ -25,10 +25,12 @@ hr {
 
 .title-left {
   float: left;
-  margin-left: 30%;
+  margin-left: 20vw;
+  width: 200px;
 }
 
 .title-right {
   float: right;
-  margin-right: 31%;
+  margin-right: 20vw;
+  width: 200px;
 }

@@ -39,7 +39,7 @@ const Proposal: React.FC<{proposal: any}> = ({proposal}) => {
           </p>
         </div>
       </div>
-      <div className="container right">
+      <div className="container right vote-container">
         {parseInt(proposal.votesFor)>0 && <div 
           className="bar"
           id="green" 
