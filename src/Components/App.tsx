@@ -25,14 +25,8 @@ function App() {
           </select>
          </div>
          <hr />
-         <h2 style={{
-           float: "left",
-           marginLeft: "37%"
-           }}>Proposal</h2>
-         <h2 style={{
-            float: "right",
-            marginRight: "31%"
-           }}>Vote Distribution</h2>
+         <h2 className="title-left">Proposal</h2>
+         <h2 className="title-right">Vote Distribution</h2>
         <Timeline daoAddress={daoAddress} />
       </div>
     </ApolloProvider>

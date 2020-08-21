@@ -34,7 +34,7 @@ const Proposal: React.FC<{proposal: any}> = ({proposal}) => {
           {
             viewDetail && <Detail proposal={proposal}/>
           }
-          <p style={{color: "grey", cursor: "pointer"}} onClick={() => setViewDetail(!viewDetail)}>
+          <p className="text-button" onClick={() => setViewDetail(!viewDetail)}>
             {viewDetail?"Close": "Expand"}
           </p>
         </div>

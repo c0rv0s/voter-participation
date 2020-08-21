@@ -8,7 +8,7 @@ const Detail: React.FC<{proposal: any}> = ({proposal}) => {
       Proposer:
       <br/>
       <p>{proposal.proposer}</p>
-      <br/><br/>
+      <br/>
       Number of Voters: {proposal.votes.length}
       {
         proposal.votes.map((voter: any, i: number) => 

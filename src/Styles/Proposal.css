@@ -52,7 +52,6 @@
 
 /* The actual content */
 .content {
-  transition: all 0.2s ease;
   padding: 20px 20px;
   background-color: white;
   position: relative;
@@ -61,11 +60,21 @@
              -16px -16px 40px #ffffff;
 }
 
-.content:hover {
+.text-button {
+  transition: all 0.2s ease;
+  color: grey;
+  cursor: pointer;
+}
+
+.text-button:hover {
+  color: lightgrey;
+}
+
+/* .content:hover {
   box-shadow:  24px 24px 40px #d9d9d9, 
   -24px -24px 40px #ffffff;
   transform: translateY(-4px);
-} 
+}  */
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
