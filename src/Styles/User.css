@@ -1,4 +1,10 @@
 .user-container {
   text-align: left;
-  margin: 16px 150px 50px 150px;
+  margin-top: 16px;
+  margin-bottom: 50px;
+  margin-left: 10%;
+}
+
+.user-container hr{
+  margin-right: 20%;
 }
