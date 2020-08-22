@@ -1,6 +1,6 @@
 ## Voter Participation visualizer for DAOStack DAOs
 
-[Live Demo](https://c0rv0s.github.io/voter-participation/) (Note: reloading page may cause 404 error on use detail page due to being routed through Github pages.)
+[Live Demo](https://c0rv0s.github.io/voter-participation/) (Note: reloading page may cause 404 error on the user detail page due to being routed through Github pages.)
 
 View a timeline of proposals for a selection of DAOs and easily see voter turn out and number of votes cast. Default setting is to query mainnet from [Alchemy subgraph](https://api.thegraph.com/subgraphs/name/daostack/alchemy).
 
