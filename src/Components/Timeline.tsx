@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { useQuery, gql } from '@apollo/client';
 import '../Styles/Timeline.css'
 import Proposal from './Proposal'
@@ -7,9 +7,9 @@ export const DAO_QUERY = gql`
   query GetProposals($daoAddress: Bytes!) {
     proposals (
       where: {
-        dao: $daoAddress,
+        dao: $daoAddress
       },
-      orderBy: createdAt,
+      orderBy: createdAt
       orderDirection: desc
     ) {
       createdAt

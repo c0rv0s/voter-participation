@@ -16,8 +16,12 @@ export const daos = [
     "name": "CuraDAO"
   },
   {
-    "id": "0xbe1a98d3452f6da6e0984589e545d4fc25af7526",
+    "id": "0x15344EcDc2c4EDFCB092E284d93c20F0529FD8a6",
     "name": "dOrg"
+  },
+  {
+    "id": "0xbe1a98d3452f6da6e0984589e545d4fc25af7526",
+    "name": "dOrg (legacy)"
   },
   {
     "id": "0x519b70055af55a007110b4ff99b0ea33071c720a",

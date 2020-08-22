@@ -34,3 +34,11 @@ hr {
   margin-right: 20vw;
   width: 200px;
 }
+
+a:link {
+  color: rgb(60, 60, 60);
+}
+
+a:visited {
+  color: rgb(138, 138, 138);
+}

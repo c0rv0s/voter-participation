@@ -6,6 +6,10 @@ View a timeline of proposals for a selection of DAOs and easily see voter turn o
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Current Limitations
+
+No pagination for queries that return more than a 100 results
+
 ## Available Scripts
 
 In the project directory, you can run:

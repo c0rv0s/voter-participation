@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Detail: React.FC<{proposal: any}> = ({proposal}) => {
 
@@ -7,13 +8,13 @@ const Detail: React.FC<{proposal: any}> = ({proposal}) => {
       <hr/>
       Proposer:
       <br/>
-      <p>{proposal.proposer}</p>
-      <br/>
+      <Link to={`/user/${proposal.proposer}`}>{proposal.proposer}</Link>
+      <br/><br/>
       Number of Voters: {proposal.votes.length}
       {
         proposal.votes.map((voter: any, i: number) => 
           <div key={i}>
-            <p >{voter.voter}</p>
+            <Link to={`/user/${voter.voter}`}>{voter.voter}</Link>
           </div>
         )
       }
