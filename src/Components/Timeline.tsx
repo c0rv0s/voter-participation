@@ -35,6 +35,9 @@ const Timeline: React.FC<{daoAddress: string}> = ({daoAddress}) => {
     <div>
       {
         loading && <div><br/><br/><br/><br/><br/><h3>Loading...</h3></div>
+      } 
+      {
+        !loading && data.proposals.length === 0 && <div><br/><br/><br/><br/><br/><h3>No Proposals Found</h3></div>
       }
       {
         !loading && <div className="timeline">
